@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import Pager from './pager/pager.vue'
+import Vue from "vue";
+import App from "./App.vue";
+
+Vue.config.productionTip = false;
 
 new Vue({
-  el: '#app',
-  template: '<Pager :index=1 :total=10 />',
-  components: { Pager }
-})
+  render: h => h(App)
+}).$mount("#app");
